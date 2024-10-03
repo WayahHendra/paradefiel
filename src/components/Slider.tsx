@@ -18,8 +18,8 @@ const Slider = () => {
       handleNext()
     }, 2000) // 5 seconds per slide
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     return () => clearInterval(interval)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentIndex])
 
   const handleNext = () => {
