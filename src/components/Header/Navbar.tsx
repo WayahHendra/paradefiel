@@ -36,10 +36,16 @@ const Navbar = () => {
                 </div>
               </div>
               <div className="lg:hidden">
-                <h3 className="text-gray-900 text-base">Paradefiel</h3>
+                <Image 
+                  src="/assets/img/logo_name.png"
+                  alt="logo name"
+                  width={130}
+                  height={130}
+                  priority
+                />
               </div>
-              <div className="flex items-center justify-center gap-2">
-                <div className="hidden lg:block">Dikirim ke : Indonesia | IDR (Rp) | ID</div>
+              <div className="flex items-center justify-center gap-1">
+                <div className="hidden lg:block text-xs">Dikirim ke : Indonesia | IDR (Rp) | ID</div>
                 <Link href="#">
                   <div className="hover:bg-gray-300 transition ease-in-out duration-300 transform w-9 h-9 flex items-center justify-center text-center rounded-xl">
                     <Image
@@ -52,7 +58,10 @@ const Navbar = () => {
                   </div>
                 </Link>
                 <Link href="#">
-                  <div className="hover:bg-gray-300 transition ease-in-out duration-300 transform w-9 h-9 flex items-center justify-center text-center rounded-xl">
+                  <div className="hover:bg-gray-300 transition ease-in-out duration-300 transform w-9 h-9 flex items-center justify-center text-center rounded-xl relative">
+                    <div className="absolute bottom-4 left-4 w-5 h-5 bg-red-500 rounded-full border-2 border-white">
+                      <p className="text-white text-xs">0</p>
+                    </div>
                     <Image
                       src="/assets/icon/cart.svg"
                       alt="cart"
