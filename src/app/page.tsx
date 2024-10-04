@@ -1,6 +1,6 @@
 import Slider from "@/components/Slider"
 import ProductGrid from "@/components/ProductGrid"
-import Collections from "@/components/Collecttion"
+import Collections from "@/components/Collection"
 
 export default function Slideshow() {
   return (
