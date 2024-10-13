@@ -1,7 +1,6 @@
 import Slider from "@/components/Slider"
 import ProductGrid from "@/components/ProductGrid"
 import Collections from "@/components/Collection"
-// import Footer from "@/components/Footer"
 
 export default function Slideshow() {
   return (
