@@ -122,11 +122,10 @@ const Slider = () => {
         {slides.map((_, index) => (
           <div
             key={index}
-            className={`w-2 h-2 lg:w-2.5 lg:h-2.5 rounded-full bg-white/30 transition-all duration-300 ${
-              currentIndex === index
+            className={`w-2 h-2 lg:w-2.5 lg:h-2.5 rounded-full bg-white/30 transition-all duration-300 ${currentIndex === index
                 ? "bg-opacity-100 scale-125"
                 : "bg-opacity-50"
-            }`}
+              }`}
           ></div>
         ))}
       </div>

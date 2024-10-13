@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import FloatingButton from "./FloatingButton"
 
 const Footer = () => {
     const images = [
@@ -89,112 +90,115 @@ const Footer = () => {
                 }
             ]
         }
-        
+
     ]
 
-  return (
-    <>
-        <footer className="bottom-0 bg-black w-full shadow-xl text-white">
-            <div className="px-7 py-7 lg:px-16 lg:py-14">
-                <div className="grid gap-6 last:mb-8 grid-cols-1 md:grid-cols-3">
-                    <div className="w-full text-left">
-                        <div className="shrink-0 grow-0 px-3 mb-3">
-                            <div className="mb-3 text-base md:text-lg font-bold">ABOUT US</div>
-                            <p className="text-sm md:text-base ml-1">
-                                Find more about us on Instagram
-                                <Link href="#" className="ml-1 underline">@paradefia</Link>
-                            </p>
-                        </div>
-                        <div className="shrink-0 grow-0 px-5">
-                            <div className="flex gap-4">
-                                <Link href="#">
-                                    <div className="bg-white p-2 rounded-full">
-                                        <div className="flex justify-center items-center text-center">
-                                            <Image
-                                                src="/assets/icon/tiktok.svg"
-                                                alt="tiktok"
-                                                width={20}
-                                                height={20}
-                                                priority
-                                            />
+    return (
+        <>
+            <section>
+                <FloatingButton />
+            </section>
+            <footer className="bottom-0 bg-black w-full shadow-xl text-white">
+                <div className="px-7 py-7 lg:px-16 lg:py-14">
+                    <div className="grid gap-6 last:mb-8 grid-cols-1 md:grid-cols-3">
+                        <div className="w-full text-left">
+                            <div className="shrink-0 grow-0 px-3 mb-3">
+                                <div className="mb-3 text-base md:text-lg font-bold">ABOUT US</div>
+                                <p className="text-sm md:text-base ml-1">
+                                    Find more about us on Instagram
+                                    <Link href="#" className="ml-1 underline">@paradefiel</Link>
+                                </p>
+                            </div>
+                            <div className="shrink-0 grow-0 px-5">
+                                <div className="flex gap-4">
+                                    <Link href="#">
+                                        <div className="bg-white p-2 rounded-full">
+                                            <div className="flex justify-center items-center text-center">
+                                                <Image
+                                                    src="/assets/icon/tiktok.svg"
+                                                    alt="tiktok"
+                                                    width={20}
+                                                    height={20}
+                                                    priority
+                                                />
+                                            </div>
                                         </div>
-                                    </div>
-                                </Link>
-                                <Link href="#">
-                                    <div className="bg-white p-2 rounded-full">
-                                        <div className="flex justify-center items-center text-center">
-                                            <Image
-                                                src="/assets/icon/whatsapp.svg"
-                                                alt="whatsapp"
-                                                width={20}
-                                                height={20}
-                                                priority
-                                            />
+                                    </Link>
+                                    <Link href="#">
+                                        <div className="bg-white p-2 rounded-full">
+                                            <div className="flex justify-center items-center text-center">
+                                                <Image
+                                                    src="/assets/icon/whatsapp.svg"
+                                                    alt="whatsapp"
+                                                    width={20}
+                                                    height={20}
+                                                    priority
+                                                />
+                                            </div>
                                         </div>
-                                    </div>
-                                </Link>
-                                <Link href="#">
-                                    <div className="bg-white p-2 rounded-full">
-                                        <div className="flex justify-center items-center text-center">
-                                            <Image
-                                                src="/assets/icon/instagram.svg"
-                                                alt="instagram"
-                                                width={20}
-                                                height={20}
-                                                priority
-                                            />
+                                    </Link>
+                                    <Link href="#">
+                                        <div className="bg-white p-2 rounded-full">
+                                            <div className="flex justify-center items-center text-center">
+                                                <Image
+                                                    src="/assets/icon/instagram.svg"
+                                                    alt="instagram"
+                                                    width={20}
+                                                    height={20}
+                                                    priority
+                                                />
+                                            </div>
                                         </div>
-                                    </div>
-                                </Link>
+                                    </Link>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="w-full text-left">
-                        <div className="shrink-0 grow-0 px-3 mb-3">
-                            <div className="mb-3 text-base md:text-lg font-bold">ACCOUNT</div>
-                            <p className="text-sm md:text-base">
-                                <Link href="#" className="ml-1 underline">Login</Link>
-                            </p>
-                            <p className="text-sm md:text-base">
-                                <Link href="#" className="ml-1 underline">Register</Link>
-                            </p>
-                        </div>
-                    </div>
-                    <div className="w-full text-left">
-                        <div className="shrink-0 grow-0 px-3 mb-3">
-                            <div className="mb-3 text-base md:text-lg font-bold">PAYMENT METHOD</div>
-                            <div className="justify-start flex flex-wrap">
-                                {images[0].paygate.map((image, index) => (
-                                    <Image
-                                        key={index}
-                                        src={image.src}
-                                        alt={image.alt}
-                                        width={32}
-                                        height={32}
-                                        className="mb-2 mr-2 rounded bg-white object-contain"
-                                    />
-                                ))}
+                        <div className="w-full text-left">
+                            <div className="shrink-0 grow-0 px-3 mb-3">
+                                <div className="mb-3 text-base md:text-lg font-bold">ACCOUNT</div>
+                                <p className="text-sm md:text-base">
+                                    <Link href="#" className="ml-1 underline">Login</Link>
+                                </p>
+                                <p className="text-sm md:text-base">
+                                    <Link href="#" className="ml-1 underline">Register</Link>
+                                </p>
                             </div>
-                            <div className="my-3 text-base md:text-lg font-bold">SHIPPING METHOD</div>
-                            <div className="justify-start flex flex-wrap">
-                                {images[0].shipping.map((image, index) => (
-                                    <Image
-                                        key={index}
-                                        src={image.src}
-                                        alt={image.alt}
-                                        width={32}
-                                        height={32}
-                                        className="mb-2 mr-2 rounded bg-white object-contain"
-                                    />
-                                ))}
+                        </div>
+                        <div className="w-full text-left">
+                            <div className="shrink-0 grow-0 px-3 mb-3">
+                                <div className="mb-3 text-base md:text-lg font-bold">PAYMENT METHOD</div>
+                                <div className="justify-start flex flex-wrap">
+                                    {images[0].paygate.map((image, index) => (
+                                        <Image
+                                            key={index}
+                                            src={image.src}
+                                            alt={image.alt}
+                                            width={32}
+                                            height={32}
+                                            className="mb-2 mr-2 rounded bg-white object-contain"
+                                        />
+                                    ))}
+                                </div>
+                                <div className="my-3 text-base md:text-lg font-bold">SHIPPING METHOD</div>
+                                <div className="justify-start flex flex-wrap">
+                                    {images[0].shipping.map((image, index) => (
+                                        <Image
+                                            key={index}
+                                            src={image.src}
+                                            alt={image.alt}
+                                            width={32}
+                                            height={32}
+                                            className="mb-2 mr-2 rounded bg-white object-contain"
+                                        />
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </footer>
-    </>
-  )
+            </footer>
+        </>
+    )
 }
 
 export default Footer

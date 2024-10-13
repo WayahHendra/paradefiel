@@ -1,7 +1,7 @@
 import Slider from "@/components/Slider"
 import ProductGrid from "@/components/ProductGrid"
 import Collections from "@/components/Collection"
-import Footer from "@/components/Footer"
+// import Footer from "@/components/Footer"
 
 export default function Slideshow() {
   return (
@@ -11,7 +11,6 @@ export default function Slideshow() {
           <Slider />
           <ProductGrid />
           <Collections />
-          <Footer />
         </div>
       </div>
     </div>

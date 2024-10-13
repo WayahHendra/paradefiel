@@ -31,7 +31,7 @@ const Navbar = () => {
               </Link>
             </div>
             <div className="lg:hidden">
-              <Image 
+              <Image
                 src="/assets/img/logo_name.png"
                 alt="logo name"
                 width={130}
@@ -67,7 +67,7 @@ const Navbar = () => {
                 </div>
               </Link>
               <Link href="#">
-              <div className="hover:bg-gray-300 transition ease-in-out duration-300 transform w-9 h-9 flex items-center justify-center text-center rounded-xl">
+                <div className="hover:bg-gray-300 transition ease-in-out duration-300 transform w-9 h-9 flex items-center justify-center text-center rounded-xl">
                   <Image
                     src="/assets/icon/user.svg"
                     alt="user"
