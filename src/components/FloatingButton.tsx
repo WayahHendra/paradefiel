@@ -31,7 +31,7 @@ const FloatingButton = () => {
 
     return (
         <>
-            <div className="fixed bottom-0 z-[999] w-full px-5 pb-5">
+            <div className="fixed bottom-0 z-[999] w-full pr-4 pb-5">
                 <div className="flex flex-col items-end gap-1.5">
                     {isVisible && (
                         <button
