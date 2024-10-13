@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
-import FloatingButton from "./FloatingButton"
+
+import FloatingButton from "./ui/FloatingButton"
 
 const Footer = () => {
     const images = [

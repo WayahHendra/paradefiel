@@ -1,13 +1,13 @@
 "use client"
 
-import Image from "next/image"
 import { useState } from "react"
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Navigation, Pagination, Autoplay } from "swiper/modules"
+
+import Image from "next/image"
 import Link from "next/link"
 
 import { cn } from "@/lib/utils"
-
-import { Swiper, SwiperSlide } from "swiper/react"
-import { Navigation, Pagination, Autoplay } from "swiper/modules"
 
 import "swiper/css"
 import "swiper/css/pagination"
