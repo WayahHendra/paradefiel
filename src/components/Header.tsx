@@ -18,9 +18,7 @@ const Header = () => {
                 />
               </div>
               <div className="flex justify-center items-center gap-4">
-                <div>
-                  <p className="text-black/30">|</p>
-                </div>
+                <div className="text-black/30">|</div>
                 <Link href="#">
                   <Image
                     src="/assets/img/logo.png"
