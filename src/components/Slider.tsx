@@ -75,7 +75,7 @@ const Slider = () => {
                 priority
               />
               {/* Custom Message */}
-              <div className="absolute left-0 top-0 z-20 flex h-full w-full flex-col text-white items-center justify-center text-center p-4 bg-black bg-opacity-50">
+              <div className="absolute left-0 top-0 z-20 flex h-full w-full flex-col text-white items-center justify-center text-center p-4 bg-black/50">
                 <div className={cn("text-h3-medium px-2", slide.button.status == true ? "mb-4" : "")}>{slide.message}</div>
                 {slide.button.status == true && (
                   slide.button.text && (
