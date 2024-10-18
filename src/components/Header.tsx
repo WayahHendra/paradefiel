@@ -4,7 +4,7 @@ import Link from "next/link"
 const Header = () => {
   return (
     <>
-      <header className="w-full sticky top-0 z-50 bg-white/90 backdrop-blur shadow-xl">
+      <header className="w-full sticky top-0 z-50 bg-white/0 backdrop-blur shadow-xl">
         <div className="py-2.5 px-7 lg:px-16">
           <div className="grid grid-cols-3 text-center text-black">
             <div className="flex items-center justify-start gap-4">
